@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:storybook/recommended",
+    "plugin:storybook/recommended"
+  ],
+  "overrides": [
+    // Storybook
+    {
+      "files": ["**/?(*.)+(stories).ts?(x)"],
+      "extends": ["plugin:storybook/recommended"],
+      "rules": {
+        "import/no-default-export": "off",
+        "react-hooks/rules-of-hooks": "off"
+      }
+    }
+  ]
+}
